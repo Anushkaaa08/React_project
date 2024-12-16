@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #e37383;
+}
+
+.loader-container {
+  transform-origin: top;
+}
+
+.svg-container {
+  width: 100%;
+  height: fit-content;
+}
+
+#loader-svg {
+  width: 30vw;
+  height: 30vh;
+}
