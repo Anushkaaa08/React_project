@@ -39,25 +39,25 @@ const Menu = ({ state }) => {
         duration: 0,
         css: { display: "block" },
       });
-      gsap.to([revealMenuBackground, revealMenu], {
+      gsap.to([ revealMenu], {
         duration: 0,
         opacity: 1,
         height: "100%",
       });
-      staggerReveal(revealMenuBackground, revealMenu);
+      staggerReveal( revealMenu);
       imgFadeDown(".menu-img");
       staggerText(line1, line2, line3);
       // fadeInUp(info);
     }
   }, [state]);
 
-  const staggerReveal = (node1, node2) => {
-    gsap.from([node1, node2], {
+  const staggerReveal = (node1) => {
+    gsap.from([node1], {
       duration: 0.8,
       height: 0,
       top:'100%',
       tranformOrigin: "right top",
-      ease: "power1.in",
+      ease: "power3.inOut",
       stagger: {
         amount: 0.1,
       },
@@ -97,10 +97,10 @@ const Menu = ({ state }) => {
 
   return (
     <div ref={(el) => (menu = el)} className="hamburger-menu">
-      <div
+      {/* <div
         ref={(el) => (revealMenuBackground = el)}
         className="menu-secondary-background-color"
-      ></div>
+      ></div> */}
 
       <div ref={(el) => (revealMenu = el)} className="menu-layer">
         <div className="menu-container ">

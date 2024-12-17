@@ -17,8 +17,6 @@
 }
 /* 
 .mask-container {
-
-
   mask-image: linear-gradient(0deg, black 20% 20%, transparent 20% 20%);
   z-index: 1;
   mask-size: 100% 30px; 
