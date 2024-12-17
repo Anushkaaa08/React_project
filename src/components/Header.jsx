@@ -45,11 +45,37 @@ const Header = () => {
     }, 1200);
   };
 
+  // trial
+  const body = document.body;
+  let lastScroll = 0;
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    console.log(currentScroll);
+
+    if (currentScroll <= 160) {
+      body.classList.remove("scroll-up");
+    }
+
+    if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+      body.classList.remove("scroll-up");
+      body.classList.add("scroll-down");
+    }
+    if (currentScroll < lastScroll && body.classList.contains("scroll-down")) {
+      body.classList.remove("scroll-down");
+      body.classList.add("scroll-up");
+    }
+
+    lastScroll = currentScroll;
+  });
+
   return (
-    <header>
+    <header className="my-header">
       <nav className="px-12 py-4">
         <div className="inner-header text-xl font-semibold text-white">
-          <div className="title"><Logo /></div>
+          <div className="title">
+            <Logo />
+          </div>
           <div>
             <button
               disabled={disabled}

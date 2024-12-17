@@ -19,12 +19,10 @@ body {
   transform-origin: top;
 }
 
-.svg-container {
-  width: 100%;
-  height: fit-content;
+.scroll-up .my-header {
+  background-color: #710d1c;
 }
 
-#loader-svg {
-  width: 30vw;
-  height: 30vh;
+.scroll-down .my-header {
+  transform: translate3d(0, -100%, 0);
 }
