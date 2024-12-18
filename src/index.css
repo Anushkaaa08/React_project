@@ -23,6 +23,7 @@ body {
   background-color: #710d1c;
 }
 
+
 .scroll-down .my-header {
   transform: translate3d(0, -100%, 0);
 }
