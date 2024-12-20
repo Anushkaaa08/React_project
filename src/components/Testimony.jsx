@@ -14,7 +14,7 @@ export default function Testimony(){
     <>
     
     {/* <div class="space space--small"></div> */}
-    <div class="cards">
+    <div class="cards shine">
     {revs.map((rev, index) => (
           <div key={index} className="card" data-index={index}>
             <div className="card__inner">
