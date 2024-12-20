@@ -1,0 +1,108 @@
+.main-container{
+    padding: 65px;
+    padding-top: 95px;
+    display: flex;
+}
+.img-container{
+    width: 60%;
+    margin-right: 30px;
+    height: auto;
+    border-radius: 12px;
+}
+.img-container img{
+    width: 100%;
+    border-radius: 20px;
+    height: 80vh;
+}
+.prdt-title{
+    font-size: 32px;
+    font-weight: bold;
+}
+.prdt-title label{
+    color: rgb(66, 66, 66);
+}
+
+.prdt-desp{
+    color: gray;
+}
+.prd-price{
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(94, 94, 94);
+    margin: 10px 0;
+}
+
+.prdt-details button{
+    padding: 8px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: #b0dcd1;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px #888888;
+    color: rgb(45, 45, 45);
+}
+
+.prdt-details button:hover{
+    background-color: #ffffff;
+    font-weight: bold;
+    color: gray;
+}
+.offer-title{
+    font-size: 24px;
+    margin-top: 20px;
+    color: rgb(67, 67, 67);
+}
+
+/* Shine */
+.hover14 figure {
+	position: relative;
+}
+.hover14 figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.hover14 figure:hover::before {
+	-webkit-animation: shine .50s;
+	animation: shine .50s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+
+
+.offers-main-div{
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+
+.offer-details{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.offer-info{
+    line-height: 20px;
+    color: rgb(91, 91, 91);
+    font-weight: bold;
+    margin-left: 20px;
+}

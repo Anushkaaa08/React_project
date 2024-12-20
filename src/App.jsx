@@ -9,6 +9,8 @@ import Hero from "./components/Hero";
 import { useEffect } from "react";
 import Lenis from "lenis";
 
+import PrdtDetails from "./components/PrdtDetails";
+
 gsap.registerPlugin(useGSAP);
 function App() {
   useEffect(() => {
@@ -25,11 +27,18 @@ function App() {
       <Loader />
       <div>
         <Header />
+        
       </div>
+      
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/about" element={<About />} />
+        <Route path="/prdDetails" element={<PrdtDetails />} />
       </Routes>
+
+      
+      
+      
     </>
   );
 }

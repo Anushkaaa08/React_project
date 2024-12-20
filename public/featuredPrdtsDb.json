@@ -1,0 +1,48 @@
+[
+    {
+        "id":1,
+        "img" : "https://cdn.uengage.io/uploads/7175/image-772539-1727877154.jpeg",
+        "title" : "Chocolate Brownie",
+        "rating" : "4.5",
+        "price" : "$20"
+    },
+    {
+        "id":2,
+        "img" : "https://cdn.uengage.io/uploads/7175/image-6VBDBU-1681839363.jpg",
+        "title" : "Pineapple Pastry",
+        "rating" : "4.8",
+        "price" : "$45"
+    },
+    {
+        "id":3,
+        "img" : "https://cdn.uengage.io/uploads/7175/image-VSF1Q8-1687877411.jpg",
+        "title" : "Red Velvet Cake",
+        "rating" : "4.2",
+        "price" : "$50"
+    },
+    {
+        "id":4,
+        "img" : "https://cdn.uengage.io/uploads/7175/image-331148-1727877154.jpeg",
+        "title" : "Fruit Cake",
+        "rating" : "4.5",
+        "price" : "$20"
+    },
+    {
+        "id":5,
+        "img" : "https://cdn.uengage.io/uploads/7175/image-757231-1727877154.jpeg",
+        "title" : "Croissants",
+        "rating" : "4.0",
+        "price" : "$15"
+    },
+    {
+        "id":6,
+        "img" : "https://cdn.uengage.io/uploads/7175/image-749472-1727877154.jpeg",
+        "title" : "Chocolate Cake",
+        "rating" : "4.8",
+        "price" : "$35"
+    }
+
+
+
+    
+]

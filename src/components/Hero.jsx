@@ -3,6 +3,7 @@ import "./hero.css";
 import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import FeaturedPrdts from "./FeaturedPrdts"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -74,7 +75,8 @@ const Hero = () => {
           </div>
         </div>
       </main>
-      <section className="min-h-screen">second section</section>
+      {/* <section className="min-h-screen">second section</section> */}
+      <FeaturedPrdts />
     </>
   );
 };

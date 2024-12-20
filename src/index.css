@@ -12,7 +12,8 @@ body,
 }
 
 body {
-  background-color: #e37383;
+  background-color: #fbecea;
+  ;
 }
 
 .loader-container {
@@ -20,7 +21,7 @@ body {
 }
 
 .scroll-up .my-header {
-  background-color: #710d1c;
+  background-color: #b0dcd1;
 }
 
 
