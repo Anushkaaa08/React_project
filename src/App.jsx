@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import Lenis from "lenis";
 
 import PrdtDetails from "./components/PrdtDetails";
+import FeaturedProducts from "./components/FeaturedProducts";
 
 gsap.registerPlugin(useGSAP);
 function App() {
@@ -36,6 +37,7 @@ function App() {
         <Route path="/prdDetails" element={<PrdtDetails />} />
       </Routes>
 
+      
       
       
       

@@ -3,9 +3,9 @@ import "./hero.css";
 import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import FeaturedPrdts from "./FeaturedPrdts"
 
 import Testimony from "./landing-page/Testimony";
+import FeaturedProducts from "./FeaturedProducts";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -57,8 +57,12 @@ const Hero = () => {
           </div>
         </div>
       </main>
+      {/* <FeaturedPrdts /> */}
+      <div className="h-screen relative">
+        <FeaturedProducts />
+      </div>
       <Testimony />
-      <FeaturedPrdts />
+
     </>
   );
 };
