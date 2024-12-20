@@ -1,8 +1,12 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import "./loader.css";
+import { useLocation } from "react-router";
 
 const Loader = () => {
+  const location = useLocation();
+  const { hash, pathname, search } = location;
+  console.log(pathname)
   useGSAP(() => {
     var tl = gsap.timeline();
     tl.to(".loader-svg > path", {
@@ -42,8 +46,8 @@ const Loader = () => {
       });
   });
   return (
-    <div className="absolute h-screen w-full z-50 loader-container flex items-center justify-center overflow-hidden">
-      <div className="svg-container absolute max-w-fit">
+    <div className={`absolute h-screen w-full z-50 loader-container items-center justify-center overflow-hidden ${pathname == '/' ? 'flex' : 'hidden' }` }>
+      <div className="svg-container absolute max-w-fit overflow-hidden">
         <svg
           className="loader-svg"
           viewBox="0 0 70 67"
