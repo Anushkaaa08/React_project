@@ -8,7 +8,9 @@ import About from "./components/About";
 import Hero from "./components/Hero";
 import { useEffect } from "react";
 import Lenis from "lenis";
-
+import Testimony from "./components/Testimony"
+import Contact from "./components/Contact";
+import Products from "./components/products";
 gsap.registerPlugin(useGSAP);
 function App() {
   useEffect(() => {
@@ -22,14 +24,25 @@ function App() {
 
   return (
     <>
-      <Loader />
+
+      {/* <Loader /> */}
       <div>
         <Header />
       </div>
+
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/about" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/products" element={<Products />} />
+
       </Routes>
+      <Routes>
+        <Route path="/" element={<Testimony />} />
+        <Route path="/testimony" element={<Testimony />} />
+      </Routes>
+
+      {/* <Testimony/> */}
     </>
   );
 }

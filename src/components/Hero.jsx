@@ -74,7 +74,7 @@ const Hero = () => {
           </div>
         </div>
       </main>
-      <section className="min-h-screen">second section</section>
+      {/* <section className="min-h-screen">second section</section> */}
     </>
   );
 };

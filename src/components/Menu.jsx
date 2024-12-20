@@ -3,6 +3,7 @@ import gsap from "gsap";
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router";
 
+
 const Menu = ({ state }) => {
   
   let menu = useRef(null);
@@ -12,6 +13,7 @@ const Menu = ({ state }) => {
   let line1 = useRef(null);
   let line2 = useRef(null);
   let line3 = useRef(null);
+  let line4 = useRef(null);
   let info = useRef(null);
 
   useEffect(() => {
@@ -46,7 +48,7 @@ const Menu = ({ state }) => {
       });
       staggerReveal( revealMenu);
       imgFadeDown(".menu-img");
-      staggerText(line1, line2, line3);
+      staggerText(line1, line2, line3, line4);
       // fadeInUp(info);
     }
   }, [state]);
@@ -123,6 +125,9 @@ const Menu = ({ state }) => {
                   </li>
                   <li ref={(el) => (line3 = el)}>
                     <Link to="/about">About</Link>
+                  </li>
+                  <li ref={(el) => (line4 = el)}>
+                    <Link to="/testimony">About</Link>
                   </li>
                 </ul>
               </nav>
