@@ -46,6 +46,7 @@ const Hero = () => {
           loop
         ></video>
 
+
         <div className="slider-container absolute">
           <div className="slider relative whitespace-nowrap text-9xl">
             <p ref={firstText}>We Bake Happiness &#9672;</p>
@@ -56,6 +57,7 @@ const Hero = () => {
           </div>
         </div>
       </main>
+      <Testimony />
       <FeaturedPrdts />
     </>
   );
