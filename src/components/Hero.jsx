@@ -3,6 +3,8 @@ import "./hero.css";
 import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import FeaturedPrdts from "./FeaturedPrdts"
+
 import Testimony from "./landing-page/Testimony";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -32,6 +34,7 @@ const Hero = () => {
     requestAnimationFrame(animate);
   }, []);
 
+
   return (
     <>
       <main className="overflow-hidden relative min-h-screen">
@@ -53,7 +56,7 @@ const Hero = () => {
           </div>
         </div>
       </main>
-      <Testimony />
+      <FeaturedPrdts />
     </>
   );
 };
