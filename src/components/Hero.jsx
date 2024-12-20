@@ -5,6 +5,8 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import FeaturedPrdts from "./FeaturedPrdts"
 
+import Testimony from "./landing-page/Testimony";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
@@ -32,24 +34,6 @@ const Hero = () => {
     requestAnimationFrame(animate);
   }, []);
 
-  // useEffect(() => {
-  //   gsap.to(maskContainerRef.current, {
-  //     scrollTrigger: {
-  //       trigger: maskContainerRef.current,
-  //       start: "center 200px",
-  //       end: "+=150px",
-  //       scrub: 1,
-  //       // markers: true,
-  //     },
-  //     maskImage: `linear-gradient(
-  //    to bottom,
-  //   black 0%,
-  //   black 100%,
-  //   transparent 0%,
-  //   transparent 0%
-  //    )`,
-  //   });
-  // }, []);
 
   return (
     <>
@@ -61,10 +45,7 @@ const Hero = () => {
           muted
           loop
         ></video>
-        {/* <div
-          ref={maskContainerRef}
-          className="absolute mask-container h-full w-full  "
-        ></div> */}
+
         <div className="slider-container absolute">
           <div className="slider relative whitespace-nowrap text-9xl">
             <p ref={firstText}>We Bake Happiness &#9672;</p>
@@ -75,7 +56,6 @@ const Hero = () => {
           </div>
         </div>
       </main>
-      {/* <section className="min-h-screen">second section</section> */}
       <FeaturedPrdts />
     </>
   );
