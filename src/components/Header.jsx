@@ -51,7 +51,7 @@ const Header = () => {
 
   window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;
-    console.log(currentScroll);
+    // console.log(currentScroll);
 
     if (currentScroll <= 160) {
       body.classList.remove("scroll-up");

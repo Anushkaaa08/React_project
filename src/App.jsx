@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-      <Loader />
+      {/* <Loader /> */}
       <div>
         <Header />
       </div>
