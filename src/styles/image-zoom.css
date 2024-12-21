@@ -1,0 +1,96 @@
+.image-zoom-wrapper {
+  height: 300vh;
+  position: relative;
+}
+
+.image-zoom-sticky {
+  height: 100vh;
+  position: sticky;
+  overflow: hidden;
+  top: 0;
+}
+
+.el {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-container {
+  position: relative;
+  width: 25vw;
+  height: 25vh;
+}
+
+.img-item {
+  object-fit: cover;
+}
+
+.el:nth-of-type(2) > .img-container {
+  width: 30vw;
+  height: 30vh;
+  top: -30vh;
+  left: 28vw;
+}
+.el:nth-of-type(3) > .img-container {
+  top: -19vh;
+  left: 2.5vw;
+  width: 20vw;
+  height: 45vh;
+}
+
+.el:nth-of-type(4) > .img-container {
+  left: -25.5vw;
+  top: -0vh;
+  width: 25vw;
+  height: 25vh;
+}
+
+.el:nth-of-type(5) > .img-container {
+  top: 12.5vh;
+  left: 23vw;
+  width: 20vw;
+  height: 25vh;
+}
+
+.el:nth-of-type(6) > .img-container {
+  top: 38vh;
+  left: -2.5vw;
+  width: 30vw;
+  height: 25vh;
+}
+.el:nth-of-type(7) > .img-container {
+  top: -26vh;
+  left: -15.5vw;
+  width: 15vw;
+  height: 15vh;
+}
+
+/* .address {
+  padding: 5px 10px;
+  border: 1px solid gray;
+  position: relative;
+  transition: height 2s ease-in-out;
+}
+
+.address:nth-of-type(1)::after {
+  overflow: hidden;
+  content: "Hello";
+  position: relative;
+  height: 0px;
+  display: block;
+  transition: height 2s ease-in-out;
+}
+
+.address:nth-of-type(1):hover::after {
+  height: auto;
+}
+
+.address::after {
+  transition: height 2s ease-in-out;
+} */
+
