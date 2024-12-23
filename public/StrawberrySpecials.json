@@ -1,0 +1,62 @@
+{
+    "Products":[
+  {
+        "id": 1,
+      "title": "Strawberry & Fresh Cream Cake",
+      "description": "Layers of strawberry jam, diplomat cream...",
+      "price": 725,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+  },
+  {
+      "title": "Strawberry & Fresh Cream Pastry",
+      "description": "Layers of strawberry jam, fresh cream and...",
+      "price": 775,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+  },
+  {
+      "title": "Premium Plan",
+      "description": "Lorem ipsum dolor sit amet...",
+      "price": 560,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+  },
+  {
+      "title": "Chocolate Truffle Cake",
+      "description": "Rich chocolate cake with layers of truffle...",
+      "price": 800,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+  },
+  {
+      "title": "Vanilla & Berry Pastry",
+      "description": "Delicious vanilla pastry with berry compote...",
+      "price": 650,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+  },
+  {
+      "title": "Gold Membership Plan",
+      "description": "Exclusive benefits and offers...",
+      "price": 1200,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+  },
+  {
+      "title": "Red Velvet Cake",
+      "description": "Classic red velvet cake with cream cheese frosting...",
+      "price": 900,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+  },
+  {
+      "title": "Mango Delight Pastry",
+      "description": "Tropical mango pastry with a creamy filling...",
+      "price": 700,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+  },
+  {
+      "title": "Silver Membership Plan",
+      "description": "Enjoy a range of benefits and discounts...",
+      "price": 800,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+  }
+],
+"cart":[
+
+]
+}

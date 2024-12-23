@@ -25,6 +25,7 @@ header {
   align-items: center;
 }
 .hamburger-menu {
+  
   display: none;
   z-index: 9;
   top: 0;
@@ -55,7 +56,7 @@ li > * {
 
 .menu-layer {
   position: relative;
-  background-color: #5f27cd;
+  background-color: #e37383;
   height: 100%;
   overflow: hidden;
 }

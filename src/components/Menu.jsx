@@ -12,6 +12,7 @@ const Menu = ({ state }) => {
   let line1 = useRef(null);
   let line2 = useRef(null);
   let line3 = useRef(null);
+  let line4 = useRef(null);
   let info = useRef(null);
 
   useEffect(() => {
@@ -46,7 +47,7 @@ const Menu = ({ state }) => {
       });
       staggerReveal( revealMenu);
       imgFadeDown(".menu-img");
-      staggerText(line1, line2, line3);
+      staggerText(line1, line2, line3, line4);
       // fadeInUp(info);
     }
   }, [state]);
@@ -105,7 +106,7 @@ const Menu = ({ state }) => {
       <div ref={(el) => (revealMenu = el)} className="menu-layer">
         <div className="menu-container ">
           <div className="menu-wrapper">
-            <div className="menu-inner-container text-white">
+            <div className="menu-inner-container text-white ">
               {/* <div>
                 <img
                   src="https://images.unsplash.com/photo-1503652785-12bcf738d477?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -123,6 +124,9 @@ const Menu = ({ state }) => {
                   </li>
                   <li ref={(el) => (line3 = el)}>
                     <Link to="/about">About</Link>
+                  </li>
+                  <li ref={(el) => (line4 = el)}>
+                    <Link to="/category">Category</Link>
                   </li>
                 </ul>
               </nav>

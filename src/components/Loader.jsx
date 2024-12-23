@@ -46,7 +46,7 @@ const Loader = () => {
       });
   });
   return (
-    <div className={`absolute h-screen w-full z-50 loader-container items-center justify-center overflow-hidden ${pathname == '/' ? 'flex' : 'hidden' }` }>
+    <div className={`absolute h-screen w-full loader-container items-center justify-center overflow-hidden ${pathname == '/' ? 'flex' : 'hidden' }` }>
       <div className="svg-container absolute max-w-fit overflow-hidden">
         <svg
           className="loader-svg"
