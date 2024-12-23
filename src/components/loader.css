@@ -1,5 +1,6 @@
 .loader-container {
   background-color: #e37383;
+  z-index: 9999999;
   /* opacity: 0.5; */
 }
 

@@ -39,20 +39,33 @@
       width: 30%;
     }
   }
-  
   .card {
     height: fit-content;
     padding: 10px;
     margin: 5px;
     background-color: white;
     border-radius: 10px;
-  }
-  
-  .card_header {
+}
+
+.card_header {
     display: flex;
-    align-items: center;
+    flex-direction: column; /* This ensures the items stack vertically */
+    align-items: flex-start; /* Align items to the start of the container */
     margin-bottom: 15px;
-  }
+}
+
+.bill_flex {
+    display: flex;
+    flex-direction: column; /* This ensures the items stack vertically */
+    align-items: flex-start; /* Align items to the start of the container */
+}
+
+.bill_item {
+  display: flex;
+  gap:210px;
+    margin-bottom: 10px; /* Add some space between items */
+}
+
   
   .svg_btn {
     border: none;

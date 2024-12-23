@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.mainContent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  padding-top: 130px;
+  background-color: #fbecea;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+
+.cardContainer.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  transition: all 1s ease-in-out;
+}
+
+.cardContainer.centered .card {
+  transform: scale(2.4);
+  transition: all 1s ease-in-out;
+}
+
+.card {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 17px solid white;
+  transition: all 3s ease-in-out;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: all 3s ease-in-out;
+}
+
+.svgText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s ease-in-out;
+}
+
+.svgText.hidden {
+  opacity: 0;
+}
+
+.svgText text {
+  font-size: 26px;
+  font-weight: bold;
+  fill: black;
+}
+
+.detailPage {
+  animation: slideIn 3s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

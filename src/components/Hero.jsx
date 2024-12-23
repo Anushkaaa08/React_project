@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Testimony from "./landing-page/Testimony";
 import FeaturedProducts from "./FeaturedProducts";
 import ImageHover from "./landing-page/ImageHover";
+import ImageZoom from "./landing-page/ImageZoom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -64,6 +65,7 @@ const Hero = () => {
       </div>
       <Testimony />
       <ImageHover />
+      <ImageZoom/>
 
     </>
   );
