@@ -19,6 +19,13 @@ const AuthForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/;
+  
+    if (!emailPattern.test(formData.email)) {
+      setError('Invalid email format');
+      return;
+    }
+  
     if (isLogin) {
       handleLogin();
     } else {
@@ -70,15 +77,18 @@ const AuthForm = () => {
           <div style={{ marginBottom: '15px' }}>
             <label htmlFor="email" style={{ display: 'block', marginBottom: '5px' }}>Email</label>
             <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleInputChange}
-              style={{ width: '100%', padding: '10px', borderRadius: '4px', border: '1px solid #ddd' }}
-              required
-            />
-          </div>
+    type="email"
+    id="email"
+    name="email"
+    value={formData.email}
+    onChange={handleInputChange}
+    style={{ width: '100%', padding: '10px', borderRadius: '4px', border: '1px solid #ddd' }}
+    required
+  />
+</div>
+{error && <p style={{ color: 'red', textAlign: 'center' }}>{error}</p>}
+
+      
           <div style={{ marginBottom: '15px' }}>
             <label htmlFor="password" style={{ display: 'block', marginBottom: '5px' }}>Password</label>
             <input

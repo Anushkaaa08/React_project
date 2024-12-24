@@ -1,0 +1,37 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "name": "Christmas Specials",
+            "image": "https://cdn.uengage.io/uploads/7175/image-557283-1732947048.jpeg"
+        },
+        {
+            "id": 2,
+            "name": "Combos @ 15% OFF",
+            "image": "https://cdn.uengage.io/uploads/7175/image-831986-1711902215.jpeg"
+        },
+        {
+            "id": 3,
+            "name": "Strawberry Specials",
+            "image": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "categoryId": 3,
+            "title": "Strawberry & Fresh Cream Cake",
+            "description": "Layers of strawberry jam, diplomat cream...",
+            "price": "₹725",
+            "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+        },
+        {
+            "id": 2,
+            "categoryId": 3,
+            "title": "Strawberry & Fresh Cream Pastry",
+            "description": "Layers of strawberry jam, fresh cream and...",
+            "price": "₹775",
+            "imgSrc": "https://cdn.uengage.io/uploads/7175/image-557283-1732947048.jpeg"
+        }
+    ]
+}
