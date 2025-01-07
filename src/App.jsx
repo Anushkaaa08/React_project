@@ -40,13 +40,15 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/prdDetails" element={<PrdtDetails />} />
         <Route path="/category" element={<Category />}/>
-        <Route path="/products/:categoryName" element={<Products />} />
-        <Route path="/products/:categoryName/:productName" element={<PrdtDetails />} />
+        <Route path="/category/:categoryId" element={<Products />} />
+        <Route path="/category/:categoryId/:productName" element={<PrdtDetails />}/>
+        
         <Route path="/cart" element={<Cartpage />} />
         <Route path="/login" element={<AuthForm/>}/>
         
       </Routes>
       {/* <Cartpage/> */}
+     
       <div>
         <Footer />
       </div>

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import style from "../../assets/styles/cart.module.css";
 import { GoClockFill } from "react-icons/go";
-import { FaGift } from "react-icons/fa6";
+import { FaGift, FaLocationDot } from "react-icons/fa6";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
-import { FaLocationDot } from "react-icons/fa6";
 import { RiCoupon2Fill } from "react-icons/ri";
 import { useNavigate } from 'react-router';
+import axios from 'axios';
 
 export default function Cartpage() {
     const [selected, setSelected] = useState("Delivery");
@@ -13,14 +13,23 @@ export default function Cartpage() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        // Fetch the cart items from local storage
-        const storedCartItems = JSON.parse(localStorage.getItem('cart')) || [];
-        // Initialize quantity for each item if not already set
-        const initializedCartItems = storedCartItems.map(item => ({
-            ...item,
-            quantity: item.quantity ? item.quantity : 1
-        }));
-        setCartItems(initializedCartItems);
+        // Fetch the cart items from the JSON server based on the logged-in user ID
+        const user = JSON.parse(localStorage.getItem('user'));
+        if (user) {
+            axios.get(`http://localhost:3000/carts?userId=${user.id}`)
+                .then(response => {
+                    const cart = response.data[0];
+                    if (cart) {
+                        // Initialize quantity to 1 if not already set
+                        const initializedCartItems = cart.products.map(item => ({
+                            ...item,
+                            quantity: item.quantity ? item.quantity : 1
+                        }));
+                        setCartItems(initializedCartItems);
+                    }
+                })
+                .catch(error => console.error('Error fetching cart items:', error));
+        }
     }, []);
 
     const handleToggle = (option) => {
@@ -29,7 +38,14 @@ export default function Cartpage() {
 
     const updateCartItems = (updatedItems) => {
         setCartItems(updatedItems);
-        localStorage.setItem('cart', JSON.stringify(updatedItems));
+        const user = JSON.parse(localStorage.getItem('user'));
+        if (user) {
+            axios.patch(`http://localhost:3000/carts/${user.id}`, { products: updatedItems })
+                .then(response => {
+                    console.log('Cart updated successfully');
+                })
+                .catch(error => console.error('Error updating cart:', error));
+        }
     };
 
     const handleIncrement = (index) => {
@@ -178,20 +194,19 @@ export default function Cartpage() {
                     <div className={style.card_header}>
                         <div className={style.flex_text}>
                             <div className={style.bill_flex}>
-                                
                                 <div className={style.bill_item}>
                                     <h4>Total:</h4>
                                     <h4>₹ {calculateTotal()}</h4>
                                 </div>
                             </div>
                         </div>
-                        <button className={style.delivery_btn} onClick={handleLogin}>Checkout</button>
-                        <div className={style.checkbox}>
-                            <input type="checkbox" id="updates" name="updates" />
-                            <label htmlFor="updates">Yes, I would like to receive updates and exclusive offers from Magnolia.</label>
-                        </div>
-                        <div className={style.note}>Orders once placed cannot be cancelled and are non-refundable.</div>
                     </div>
+                    <button className={style.delivery_btn} onClick={handleLogin}>Checkout</button>
+                    <div className={style.checkbox}>
+                        <input type="checkbox" id="updates" name="updates" />
+                        <label htmlFor="updates">Yes, I would like to receive updates and exclusive offers from Magnolia.</label>
+                    </div>
+                    <div className={style.note}>Orders once placed cannot be cancelled and are non-refundable.</div>
                 </div>
             </div>
         </div>

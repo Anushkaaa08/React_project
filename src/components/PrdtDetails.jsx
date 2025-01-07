@@ -1,26 +1,30 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import style from "../assets/styles/PrdtDetails.module.css";
 import { BiSolidOffer } from "react-icons/bi";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 export default function PrdtDetails() {
+  const location = useLocation();
+  const { product } = location.state;
+
   return (
     <div className={`${style["main-container"]} min-h-screen`}>
       <div className={`${style["img-container"]} ${style["hover14"]} ${style["column"]}`}>
         <figure>
-          <img src="https://cdn.uengage.io/uploads/7175/image-VSF1Q8-1687877411.jpg" alt="" />
+          <img src={product.imgSrc} alt={product.title} />
         </figure>
       </div>
       <div className={`${style["prdt-details-main"]} w-4/6`}>
         <div className={style["prdt-details"]}>
           <div className={style["prdt-title"]}>
-            <label htmlFor="">Christmas Cake (350gm)</label>
+            <label>{product.title}</label>
           </div>
           <p className={style["prdt-desp"]}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, odit? Repellendus ut perferendis tenetur sit dignissimos ipsam velit voluptatem nemo sapiente! Enim aliquid natus ex voluptate beatae.
+            {product.description}
           </p>
           <div className={style["prd-price"]}>
-            <span>$ 950</span>
+            <span>{product.price}</span>
           </div>
           <button>Add</button>
         </div>
@@ -33,8 +37,8 @@ export default function PrdtDetails() {
               <BiSolidOffer color="#b0dcd1" className="text-6xl" />
               <div className={style["offer-details"]}>
                 <div className={style["offer-info"]}>
-                  <label htmlFor="">15% off on first purchase</label><br />
-                  <label htmlFor="">use code SIGNUP15</label>
+                  <label>15% off on first purchase</label><br />
+                  <label>use code SIGNUP15</label>
                 </div>
                 <MdKeyboardArrowRight color="gray" className="text-6xl" />
               </div>
@@ -43,8 +47,8 @@ export default function PrdtDetails() {
               <BiSolidOffer color="#b0dcd1" className="text-6xl" />
               <div className={style["offer-details"]}>
                 <div className={style["offer-info"]}>
-                  <label htmlFor="">15% off on first purchase</label><br />
-                  <label htmlFor="">use code SIGNUP15</label>
+                  <label>15% off on first purchase</label><br />
+                  <label>use code SIGNUP15</label>
                 </div>
                 <MdKeyboardArrowRight color="gray" className="text-6xl" />
               </div>

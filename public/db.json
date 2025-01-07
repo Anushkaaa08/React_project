@@ -1,0 +1,253 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Christmas Specials",
+      "image": "https://cdn.uengage.io/uploads/7175/image-557283-1732947048.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Combos @ 15% OFF",
+      "image": "https://cdn.uengage.io/uploads/7175/image-831986-1711902215.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Strawberry Specials",
+      "image": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "categoryId": 3,
+      "title": "Strawberry & Fresh Cream Cake",
+      "description": "Layers of strawberry jam, diplomat cream...",
+      "price": 725,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+    },
+    {
+      "id": 2,
+      "categoryId": 3,
+      "title": "Strawberry & Fresh Cream Pastry",
+      "description": "Layers of strawberry jam, fresh cream and...",
+      "price": 775,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-557283-1732947048.jpeg"
+    },
+    {
+      "id": 3,
+      "categoryId": 3,
+      "title": "Premium Plan",
+      "description": "Lorem ipsum dolor sit amet...",
+      "price": 560,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+    },
+    {
+      "id": 4,
+      "categoryId": 3,
+      "title": "Chocolate Truffle Cake",
+      "description": "Rich chocolate cake with layers of truffle...",
+      "price": 800,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+    },
+    {
+      "id": 5,
+      "categoryId": 3,
+      "title": "Vanilla & Berry Pastry",
+      "description": "Delicious vanilla pastry with berry compote...",
+      "price": 650,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+    },
+    {
+      "id": 6,
+      "categoryId": 3,
+      "title": "Gold Membership Plan",
+      "description": "Exclusive benefits and offers...",
+      "price": 1200,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+    },
+    {
+      "id": 7,
+      "categoryId": 3,
+      "title": "Red Velvet Cake",
+      "description": "Classic red velvet cake with cream cheese frosting...",
+      "price": 900,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+    },
+    {
+      "id": 8,
+      "categoryId": 3,
+      "title": "Mango Delight Pastry",
+      "description": "Tropical mango pastry with a creamy filling...",
+      "price": 700,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+    },
+    {
+      "id": 9,
+      "categoryId": 3,
+      "title": "Silver Membership Plan",
+      "description": "Enjoy a range of benefits and discounts...",
+      "price": 800,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+    }
+  ],
+  "users": [
+    {
+      "id": "d8ad",
+      "username": "sana@gmail.com",
+      "password": "pass123"
+    },
+    {
+      "id": "1af9",
+      "username": "aditi@gmail.com",
+      "password": "test@123"
+    },
+    {
+      "id": "c836",
+      "username": "sam@gmail.com",
+      "password": "test@123"
+    },
+    {
+      "id": "e113",
+      "username": "anushka@gmail.com",
+      "password": "test123"
+    }
+  ],
+  "carts": [
+    {
+      "id": "91e2",
+      "userId": "c836",
+      "products": [
+        {
+          "id": 2,
+          "categoryId": 3,
+          "title": "Strawberry & Fresh Cream Pastry",
+          "description": "Layers of strawberry jam, fresh cream and...",
+          "price": "₹775",
+          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-557283-1732947048.jpeg"
+        },
+        {
+          "id": 3,
+          "categoryId": 3,
+          "title": "Premium Plan",
+          "description": "Lorem ipsum dolor sit amet...",
+          "price": 560,
+          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "7edc",
+      "userId": "1af9",
+      "products": [
+        {
+          "id": 5,
+          "categoryId": 3,
+          "title": "Vanilla & Berry Pastry",
+          "description": "Delicious vanilla pastry with berry compote...",
+          "price": 650,
+          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+        },
+        {
+          "id": 8,
+          "categoryId": 3,
+          "title": "Mango Delight Pastry",
+          "description": "Tropical mango pastry with a creamy filling...",
+          "price": 700,
+          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+        },
+        {
+          "id": 3,
+          "categoryId": 3,
+          "title": "Premium Plan",
+          "description": "Lorem ipsum dolor sit amet...",
+          "price": 560,
+          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+        },
+        {
+          "id": 2,
+          "categoryId": 3,
+          "title": "Strawberry & Fresh Cream Pastry",
+          "description": "Layers of strawberry jam, fresh cream and...",
+          "price": 775,
+          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-557283-1732947048.jpeg"
+        },
+        {
+          "id": 4,
+          "categoryId": 3,
+          "title": "Chocolate Truffle Cake",
+          "description": "Rich chocolate cake with layers of truffle...",
+          "price": 800,
+          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+        },
+        {
+          "id": 5,
+          "categoryId": 3,
+          "title": "Vanilla & Berry Pastry",
+          "description": "Delicious vanilla pastry with berry compote...",
+          "price": 650,
+          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "229c",
+      "userId": "d8ad",
+      "products": [
+        {
+          "id": 6,
+          "categoryId": 3,
+          "title": "Gold Membership Plan",
+          "description": "Exclusive benefits and offers...",
+          "price": 1200,
+          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "7b04",
+      "userId": "e113",
+      "products": [
+        {
+          "id": 5,
+          "categoryId": 3,
+          "title": "Vanilla & Berry Pastry",
+          "description": "Delicious vanilla pastry with berry compote...",
+          "price": 650,
+          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+        },
+        {
+          "id": 1,
+          "categoryId": 3,
+          "title": "Strawberry & Fresh Cream Cake",
+          "description": "Layers of strawberry jam, diplomat cream...",
+          "price": 725,
+          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+        },
+        {
+          "id": 2,
+          "categoryId": 3,
+          "title": "Strawberry & Fresh Cream Pastry",
+          "description": "Layers of strawberry jam, fresh cream and...",
+          "price": 775,
+          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-557283-1732947048.jpeg"
+        },
+        {
+          "id": 3,
+          "categoryId": 3,
+          "title": "Premium Plan",
+          "description": "Lorem ipsum dolor sit amet...",
+          "price": 560,
+          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+        },
+        {
+          "id": 3,
+          "categoryId": 3,
+          "title": "Premium Plan",
+          "description": "Lorem ipsum dolor sit amet...",
+          "price": 560,
+          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+        }
+      ]
+    }
+  ]
+}

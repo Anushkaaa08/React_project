@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {  useNavigate } from 'react-router';
+import { useNavigate } from 'react-router';
 import styles from '../assets/styles/Category.module.css';
 
 export default function Category() {
@@ -15,11 +15,11 @@ export default function Category() {
             .catch(error => console.error('Error fetching the categories:', error));
     }, []);
 
-    const handleCardClick = (categoryName) => {
-        setExpandedCard(categoryName);
+    const handleCardClick = (categoryId) => {
+        setExpandedCard(categoryId);
         setTimeout(() => {
-            navigate(`/products/${categoryName}`);
-        }, 1000); // Adjust the timeout to match the duration of the animation
+            navigate(`/category/${categoryId}`);
+        }, 1000); 
     };
 
     return (
@@ -28,16 +28,16 @@ export default function Category() {
                 {categories.length > 0 ? (
                     categories.map((category, index) => (
                         <div
-                            className={`${styles.cardContainer} ${expandedCard === category.name ? styles.centered : ''}`}
+                            className={`${styles.cardContainer} ${expandedCard === category.id ? styles.centered : ''}`}
                             key={index}
                             onMouseEnter={() => setHoveredIndex(index)}
                             onMouseLeave={() => setHoveredIndex(null)}
-                            onClick={() => handleCardClick(category.name)}
+                            onClick={() => handleCardClick(category.id)}
                         >
-                            <div className={`${styles.card} ${expandedCard === category.name ? styles.expanded : ''}`}>
+                            <div className={`${styles.card} ${expandedCard === category.id ? styles.expanded : ''}`}>
                                 <img src={category.image} alt={category.name} />
                             </div>
-                            <svg viewBox="0 0 360 360" className={`${styles.svgText} ${expandedCard === category.name ? styles.hidden : ''}`}>
+                            <svg viewBox="0 0 360 360" className={`${styles.svgText} ${expandedCard === category.id ? styles.hidden : ''}`}>
                                 <defs>
                                     <path id={`circlePath${index}`} d="M 180, 180 m -160, 0 a 160,160 0 1,1 320,0 a 160,160 0 1,1 -320,0" />
                                 </defs>

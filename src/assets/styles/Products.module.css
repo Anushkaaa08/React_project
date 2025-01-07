@@ -4,9 +4,9 @@
     background-color: white;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-    position: fixed;
-    height: 100%;
-    overflow-y: auto;
+    position: sticky;
+    height: 100vh; /* Full height of the viewport */
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .sidebar h1 {
@@ -17,7 +17,7 @@
 .sidebar ul {
     list-style-type: none;
     padding: 0;
-    margin:0;
+    margin: 0;
     overflow-y: auto;
 }
 
@@ -38,14 +38,13 @@
     color: inherit;
 }
 
-
-
 /* Main content styles */
 .main-content {
-    margin-left: 18%;
+    margin-left: 0%;
     padding: 20px;
-    width: 80%;
-    margin-top: 2%;
+    width: calc(100% - 18%); /* Adjust width to account for the sidebar */
+    margin-top: 4%;
+    overflow-y: auto; /* Enable vertical scrolling if needed */
 }
 
 .cards-container {
@@ -70,8 +69,6 @@
     transform: scale(1.09);
 }
 
-
-
 .card img {
     width: 100px;
     border-radius: 8px;
@@ -87,10 +84,10 @@
     cursor: pointer;
 }
 
-.addbutton:active{
+.addbutton:active {
     background-color: white;
     color: #000000;
-    border:1px solid black;
+    border: 1px solid black;
 }
 
 .goToCartButton {
@@ -122,5 +119,3 @@
         width: 100%;
     }
 }
-
-
