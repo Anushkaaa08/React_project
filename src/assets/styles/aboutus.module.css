@@ -1,6 +1,6 @@
 .container {
-    background-color: #0f1411;
-    color: #ffffff;
+    /* background-color: #fbecea; */
+    color: black;
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@
   }
   
   .section {
-    border-bottom: 1px solid #4a4a4a;
+    border-bottom: 1px solid black;
   }
   
   .title {
@@ -24,11 +24,11 @@
     padding: 15px;
     cursor: pointer;
     font-size: 20px;
-    color: #d4d4d4;
+    color: black;
   }
   
   .title:hover {
-    color: #ffffff;
+    color: black;
   }
   
   .content {
@@ -37,13 +37,13 @@
     justify-content: center;
     gap: 10%;
     padding: 15px;
-    background-color: #0f1411;
+    /* background-color: #fbecea; */
   }
   
   .content_wrapper {
     overflow: hidden;
     max-height: 0;
-    transition: max-height 1s ease-in-out, margin 1s ease-in-out;
+    /* transition: max-height 1s ease-in-out, margin 1s ease-in-out; */
   }
   
   .content_wrapper.expanded {
@@ -53,7 +53,7 @@
   
   .content_wrapper>.content> *{
       max-height: 0;
-      transition: max-height 1s ease-in-out, margin 1s ease-in-out;
+      /* transition: max-height 1s ease-in-out, margin 1s ease-in-out; */
   }
   
   .content_wrapper.expanded>.content> *{
@@ -78,7 +78,7 @@
   
   .desc {
     font-size: 15px;
-    color: #c7c7c7;
+    color: black;
     width: 40%;
   }
   

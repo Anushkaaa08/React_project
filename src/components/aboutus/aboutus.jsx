@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "../assets/styles/aboutus.module.css";
+import style from "../../assets/styles/aboutus.module.css";
 
 export default function AboutUs() {
   const [expanded, setExpanded] = useState(null);
@@ -40,14 +40,14 @@ export default function AboutUs() {
   ];
 
   return (
-    <div className={style.container}>
+    <div className={`${style.container} bg-orange-100 font-medium text-xl`}>
       <h3 className={style.container_header}>About Us</h3>
       {sections.map((section, index) => (
         <div key={index} className={style.section}>
-          <div className={style.title} onClick={() => toggleExpand(index)}>
-            <span>{index + 1}</span>
+          <div className={`${style.title}`} onClick={() => toggleExpand(index)}>
+            <span>{index + 1} {section.title}</span>
             <span className={style.arrow}>
-              {expanded === index ? "^" : "down"}
+              {expanded === index ? "↑" : "↓"}
             </span>
           </div>
           <div

@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
-import "./hero.css";
+import "../../assets/styles/hero.css";
 import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import Testimony from "./landing-page/Testimony";
+import Testimony from "./Testimony";
 import FeaturedProducts from "./FeaturedProducts";
-import ImageHover from "./landing-page/ImageHover";
-import ImageZoom from "./landing-page/ImageZoom";
+import ImageHover from "./ImageHover";
+import ImageZoom from "./ImageZoom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,7 +36,6 @@ const Hero = () => {
     requestAnimationFrame(animate);
   }, []);
 
-
   return (
     <>
       <main className="overflow-hidden relative min-h-screen">
@@ -47,7 +46,6 @@ const Hero = () => {
           muted
           loop
         ></video>
-
 
         <div className="slider-container absolute">
           <div className="slider relative whitespace-nowrap text-9xl">
@@ -65,8 +63,7 @@ const Hero = () => {
       </div>
       <Testimony />
       <ImageHover />
-      <ImageZoom/>
-
+      <ImageZoom />
     </>
   );
 };

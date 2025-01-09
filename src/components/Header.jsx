@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Menu from "./Menu";
-import "./header.css";
+import "../assets/styles/header.css";
 import { useLocation, useNavigate } from "react-router";
 import Logo from "./Logo";
 const Header = () => {

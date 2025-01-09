@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import "../../styles/Testymo.css";
+import "../../assets/styles/Testymo.css";
 
 export default function Testimony() {
   const [revs, setRevs] = useState([]);

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import style from '../assets/styles/Products.module.css';
+import style from '../../assets/styles/Products.module.css';
 
 export default function Products() {
     const [cards, setCards] = useState([]);

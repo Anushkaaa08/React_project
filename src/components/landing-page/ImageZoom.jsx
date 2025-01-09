@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "../../styles/image-zoom.css";
+import "../../assets/styles/image-zoom.css";
 import gsap from "gsap";
 
 const ImageZoom = () => {

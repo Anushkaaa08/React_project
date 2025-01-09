@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "../../styles/image-hover.css";
+import "../../assets/styles/image-hover.css";
 import gsap from "gsap";
 
 const ImageHover = () => {

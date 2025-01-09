@@ -1,6 +1,6 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import "./loader.css";
+import "../assets/styles/loader.css";
 import { useLocation } from "react-router";
 
 const Loader = () => {
