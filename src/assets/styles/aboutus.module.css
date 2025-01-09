@@ -1,84 +1,83 @@
 .container {
-    /* background-color: #fbecea; */
-    color: black;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    min-height: 500px;
-    justify-content: center;
-  }
-  
-  .container_header {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  
-  .section {
-    border-bottom: 1px solid black;
-  }
-  
-  .title {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    cursor: pointer;
-    font-size: 20px;
-    color: black;
-  }
-  
-  .title:hover {
-    color: black;
-  }
-  
-  .content {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 10%;
-    padding: 15px;
-    /* background-color: #fbecea; */
-  }
-  
-  .content_wrapper {
-    overflow: hidden;
+  /* background-color: #fbecea; */
+  color: black;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+  justify-content: center;
+}
+
+.container_header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.section {
+  border-bottom: 1px solid black;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  color: black;
+}
+
+.title:hover {
+  color: black;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10%;
+  padding: 15px;
+  /* background-color: #fbecea; */
+}
+
+.content_wrapper {
+  overflow: hidden;
+  max-height: 0;
+  /* transition: max-height 1s ease-in-out, margin 1s ease-in-out; */
+}
+
+.content_wrapper.expanded {
+  max-height: fit-content;
+  margin-bottom: 10px;
+}
+
+.content_wrapper>.content> *{
     max-height: 0;
     /* transition: max-height 1s ease-in-out, margin 1s ease-in-out; */
-  }
-  
-  .content_wrapper.expanded {
+}
+
+.content_wrapper.expanded>.content> *{
     max-height: fit-content;
-    margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  .content_wrapper>.content> *{
-      max-height: 0;
-      /* transition: max-height 1s ease-in-out, margin 1s ease-in-out; */
+  to {
+    opacity: 1;
   }
-  
-  .content_wrapper.expanded>.content> *{
-      max-height: fit-content;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  .image {
-    width: 160px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-  
-  .desc {
-    font-size: 15px;
-    color: black;
-    width: 40%;
-  }
-  
+}
+
+.image {
+  width: 160px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.desc {
+  font-size: 15px;
+  color: black;
+  width: 40%;
+}

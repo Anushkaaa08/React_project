@@ -16,7 +16,7 @@ import Cartpage from "./components/cart/cart";
 import Category from "./components/category/category";
 import { AuthForm } from "./components/Login";
 import AboutUs from "./components/aboutus/aboutus";
-import ContactUs from "./components/contact/contact";
+import ContactUs from "./components/contactus/Contactus";
 
 gsap.registerPlugin(useGSAP);
 function App() {
@@ -42,12 +42,8 @@ function App() {
         <Route path="/prdDetails" element={<PrdtDetails />} />
         <Route path="/category" element={<Category />} />
         <Route path="/category/:categoryId" element={<Products />} />
-        <Route path="/contact" element={<ContactUs />} />
-        <Route
-          path="/category/:categoryId/:productName"
-          element={<PrdtDetails />}
-        />
-
+        <Route path="/category/:categoryId/:productName" element={<PrdtDetails />}/>
+        <Route path="/contact" element={<ContactUs />}/>
         <Route path="/cart" element={<Cartpage />} />
         <Route path="/login" element={<AuthForm />} />
       </Routes>

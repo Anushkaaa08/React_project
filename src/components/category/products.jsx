@@ -129,10 +129,11 @@ export default function Products() {
                 </div>
             </div>
             {showCartButton && (
-                <div style={{ textAlign: 'center', marginTop: '20px' }}>
-                    <button className={style.goToCartButton} onClick={handleGoToCart}>
-                        Go to Cart
-                    </button>
+                <div style={{ textAlign: 'center', marginTop: '20px',backgroundColor:'green', }}>
+                <button className={style.goToCartButton} onClick={handleGoToCart}>
+                🛒
+                
+                </button>
                 </div>
             )}
         </div>

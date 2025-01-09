@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import style from "../../assets/styles/aboutus.module.css";
-
+ 
 export default function AboutUs() {
   const [expanded, setExpanded] = useState(null);
-
+ 
   const toggleExpand = (index) => {
     setExpanded(expanded === index ? null : index);
   };
-
+ 
   const sections = [
     {
       title: "Our destinations",
@@ -38,7 +38,7 @@ export default function AboutUs() {
         "https://imgs.6sqft.com/wp-content/uploads/2022/01/02101706/Magnolia-Bakery-Hudson-Yards.jpeg",
     },
   ];
-
+ 
   return (
     <div className={`${style.container} bg-orange-100 font-medium text-xl`}>
       <h3 className={style.container_header}>About Us</h3>
