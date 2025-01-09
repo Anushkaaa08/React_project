@@ -2,17 +2,17 @@
   "categories": [
     {
       "id": "1",
-      "name": "Christmas Specials",
+      "name": "Xmas Specials",
       "image": "https://cdn.uengage.io/uploads/7175/image-557283-1732947048.jpeg"
     },
     {
       "id": "2",
-      "name": "Combos @ 15% OFF",
+      "name": "Combos 15% OFF",
       "image": "https://cdn.uengage.io/uploads/7175/image-831986-1711902215.jpeg"
     },
     {
       "id": "3",
-      "name": "Strawberry Specials",
+      "name": "Strawberry Sp",
       "image": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
     },
     {
@@ -37,17 +37,17 @@
     },
     {
       "id": "8",
-      "name": "Desserts & Cupcakes",
+      "name": "Desserts",
       "image": "https://cdn.uengage.io/uploads/7175/image-4CDG68-1687877409.jpg"
     },
     {
       "id": "9",
-      "name": "Sandwiches & Savouries",
+      "name": "Sandwiches",
       "image": "https://cdn.uengage.io/uploads/7175/image-576647-1714137762.jpeg"
     },
     {
       "id": "10",
-      "name": "Croissants & Danishes",
+      "name": "Croissants",
       "image": "https://cdn.uengage.io/uploads/7175/image-P6S262-1681384636.jpg"
     },
     {
@@ -354,6 +354,30 @@
           "description": "Layers of strawberry jam, fresh cream and...",
           "price": 800,
           "imgSrc": "https://cdn.uengage.io/uploads/7175/image-594581-1735465924.jpeg"
+        },
+        {
+          "id": "1",
+          "categoryId": 3,
+          "title": "Strawberry & Fresh Cream Cake",
+          "description": "Layers of strawberry jam, diplomat cream...",
+          "price": 725,
+          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+        },
+        {
+          "id": "1",
+          "categoryId": 3,
+          "title": "Strawberry & Fresh Cream Cake",
+          "description": "Layers of strawberry jam, diplomat cream...",
+          "price": 725,
+          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+        },
+        {
+          "id": "10",
+          "categoryId": 1,
+          "title": "New year Cake - Eggless Dutch Truffle",
+          "description": "Layers of strawberry jam, fresh cream and...",
+          "price": 800,
+          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-333468-1735465923.jpeg"
         }
       ]
     },

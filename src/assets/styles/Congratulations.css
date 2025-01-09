@@ -1,0 +1,20 @@
+.congratulations-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f8ff; /* Light blue background color */
+  font-family: 'Arial', sans-serif;
+}
+
+.confetti-emoji {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.congratulations-text {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+}

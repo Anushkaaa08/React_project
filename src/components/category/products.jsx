@@ -137,10 +137,10 @@ export default function Products() {
                     </div>
                 </div>
             </div>
-            {showCartButton && (
+            {(
                 <div style={{ textAlign: 'center', marginTop: '20px',backgroundColor:'green', }}>
                 <button className={style.goToCartButton} onClick={handleGoToCart}>
-                <FaShoppingCart color='white'/>
+                <FaShoppingCart color='white' size={24}/>
                 
                 </button>
                 </div>
