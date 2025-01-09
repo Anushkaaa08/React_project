@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router';
-import styles from '../assets/styles/Category.module.css';
+import styles from '../../assets/styles/Category.module.css';
 
 export default function Category() {
     const [categories, setCategories] = useState([]);

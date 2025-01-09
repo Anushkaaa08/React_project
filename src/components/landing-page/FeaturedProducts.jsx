@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import styles from "../assets/styles/FeaturedProducts.module.css";
+import styles from "../../assets/styles/FeaturedProducts.module.css";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { FaStar } from "react-icons/fa";
 
 // Import images
-import img1 from '../assets/FeaturedPrdtsImgs/img1.jpg';
-import img2 from '../assets/FeaturedPrdtsImgs/img2.jpg';
-import img3 from '../assets/FeaturedPrdtsImgs/img3.jpg';
-import img4 from '../assets/FeaturedPrdtsImgs/img4.jpg';
-import img5 from '../assets/FeaturedPrdtsImgs/img5.jpg';
+import img1 from '../../assets/FeaturedPrdtsImgs/img1.jpg';
+import img2 from '../../assets/FeaturedPrdtsImgs/img2.jpg';
+import img3 from '../../assets/FeaturedPrdtsImgs/img3.jpg';
+import img4 from '../../assets/FeaturedPrdtsImgs/img4.jpg';
+import img5 from '../../assets/FeaturedPrdtsImgs/img5.jpg';
 
 export default function FeaturedProducts() {
     const [images, setImages] = useState([

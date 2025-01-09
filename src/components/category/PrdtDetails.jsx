@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import style from "../assets/styles/PrdtDetails.module.css";
+import style from "../../assets/styles/PrdtDetails.module.css";
 import { BiSolidOffer } from "react-icons/bi";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
@@ -26,7 +26,7 @@ export default function PrdtDetails() {
           <div className={style["prd-price"]}>
             <span>{product.price}</span>
           </div>
-          <button>Add</button>
+          
         </div>
         <div className={style["offer-container"]}>
           <div className={style["offer-title"]}>

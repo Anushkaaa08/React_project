@@ -4,7 +4,7 @@ import { GoClockFill } from "react-icons/go";
 import { FaGift, FaLocationDot } from "react-icons/fa6";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { RiCoupon2Fill } from "react-icons/ri";
-import { useNavigate } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import axios from 'axios';
 import RazorpayPayment from "../RazorpayPayment";
 

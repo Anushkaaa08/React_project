@@ -2,13 +2,13 @@
     {
       "title": "Pastry 1",
       "description": "Layers of strawberry jam, diplomat cream...",
-      "price": "₹725",
+      "price": 725,
       "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
     },
     {
       "title": "Pastry 2",
       "description": "Layers of strawberry jam, fresh cream and...",
-      "price": "₹775",
+      "price": 775,
       "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
     }
 ]
