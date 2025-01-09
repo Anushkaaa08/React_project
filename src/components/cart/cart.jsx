@@ -4,7 +4,7 @@ import { GoClockFill } from "react-icons/go";
 import { FaGift, FaLocationDot } from "react-icons/fa6";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { RiCoupon2Fill } from "react-icons/ri";
-import { useNavigate } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import axios from 'axios';
 
 export default function Cartpage() {
@@ -85,20 +85,7 @@ export default function Cartpage() {
                             <p>Marathahalli, Bengaluru</p>
                         </div>
                     </div>
-                    <div className={style.tab_container}>
-                        <div
-                            className={`${style.tab} ${selected === "Delivery" ? style.active : ""}`}
-                            onClick={() => handleToggle("Delivery")}
-                        >
-                            Delivery
-                        </div>
-                        <div
-                            className={`${style.tab} ${selected === "Pickup" ? style.active : ""}`}
-                            onClick={() => handleToggle("Pickup")}
-                        >
-                            Pickup
-                        </div>
-                    </div>
+                    
                     <div className={style.card_header}>
                         <button className={style.svg_btn}>
                             <GoClockFill className={style.svg_icon} />
@@ -201,7 +188,7 @@ export default function Cartpage() {
                             </div>
                         </div>
                     </div>
-                    <button className={style.delivery_btn} onClick={handleLogin}>Checkout</button>
+                    <Link to="/payment"><button className={style.delivery_btn} onClick={handleLogin}>Checkout</button></Link>
                     <div className={style.checkbox}>
                         <input type="checkbox" id="updates" name="updates" />
                         <label htmlFor="updates">Yes, I would like to receive updates and exclusive offers from Magnolia.</label>

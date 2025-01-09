@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import style from '../../assets/styles/Products.module.css';
+import { FaShoppingCart } from 'react-icons/fa';
 
 export default function Products() {
     const [cards, setCards] = useState([]);
@@ -131,7 +132,7 @@ export default function Products() {
             {showCartButton && (
                 <div style={{ textAlign: 'center', marginTop: '20px',backgroundColor:'green', }}>
                 <button className={style.goToCartButton} onClick={handleGoToCart}>
-                🛒
+                <FaShoppingCart color='white'/>
                 
                 </button>
                 </div>
