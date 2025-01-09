@@ -27,6 +27,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid rgb(207, 205, 205);
+    cursor: pointer;
 }
 
 .sidebar li img {
@@ -39,9 +40,15 @@
     color: inherit;
 }
 
+/* Style for hovered category */
+.sidebar li:hover {
+    background-color: #e37383;
+    padding-left: 10px;
+}
+
 /* Style for selected category */
 .selected {
-    background-color: black;
+    background-color: #e37383;
     color: white;
 }
 
@@ -51,7 +58,8 @@
     padding: 20px;
     width: calc(100% - 18%); /* Adjust width to account for the sidebar */
     overflow-y: auto; /* Enable vertical scrolling if needed */
-    margin-top: 15px;
+    margin-top: 45px;
+
 }
 
 .cards-container {

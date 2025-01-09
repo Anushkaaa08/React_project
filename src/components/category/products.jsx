@@ -11,6 +11,7 @@ export default function Products() {
     const [showCartButton, setShowCartButton] = useState(false);
     const { categoryId } = useParams(); 
     const navigate = useNavigate();
+    const [selectedCategory, setSelectedCategory] = useState(null);
 
     useEffect(() => {
         fetch('http://localhost:3000/categories')
@@ -32,6 +33,7 @@ export default function Products() {
 
     const handleCardClick = (categoryId) => {
         setExpandedCard(categoryId);
+        setSelectedCategory(categoryId);
         setTimeout(() => {
             navigate(`/category/${categoryId}`);
         }, 1000); 
@@ -84,9 +86,15 @@ export default function Products() {
                         <h1>Categories</h1>
                         <ul>
                             {categories.map((category, index) => (
-                                <li key={index}>
+                                <li 
+                                    key={index} 
+                                    className={selectedCategory === category.id ? style.selected : ''}
+                                    onClick={() => handleCardClick(category.id)}
+                                >
                                     <img src={category.image} alt={category.name} />
-                                    <button onClick={() => handleCardClick(category.id)} style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}>
+                                    <button 
+                                        style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
+                                    >
                                         {category.name}
                                     </button>
                                 </li>

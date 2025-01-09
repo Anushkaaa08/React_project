@@ -61,8 +61,8 @@ const Menu = ({ state }) => {
         });
     };
 
-    const staggerText = (node1, node2, node3, node4) => {
-        gsap.from([node1, node2, node3, node4], {
+    const staggerText = (node1, node2, node3, node4, node5) => {
+        gsap.from([node1, node2, node3, node4, node5], {
             duration: 0.8,
             y: 100,
             delay: 0.1,
