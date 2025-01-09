@@ -10,6 +10,7 @@ const Menu = ({ state }) => {
     let line2 = useRef(null);
     let line3 = useRef(null);
     let line4 = useRef(null);
+    let line5 = useRef(null);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -43,7 +44,7 @@ const Menu = ({ state }) => {
             });
             staggerReveal(revealMenu);
             imgFadeDown(".menu-img");
-            staggerText(line1, line2, line3, line4);
+            staggerText(line1, line2, line3, line4, line5);
         }
     }, [state]);
 
@@ -118,6 +119,9 @@ const Menu = ({ state }) => {
                                     </li>
                                     <li ref={(el) => (line4 = el)}>
                                         <Link to="/category" onClick={handleCategoryClick}>Category</Link>
+                                    </li>
+                                    <li ref={(el) => (line5 = el)}>
+                                        <Link to="/login" onClick={handleCategoryClick}>Profile</Link>
                                     </li>
                                 </ul>
                             </nav>

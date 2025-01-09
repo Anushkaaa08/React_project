@@ -4,9 +4,9 @@
     background-color: white;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-    position: sticky;
-    height: 100vh; /* Full height of the viewport */
     overflow-y: auto; /* Enable vertical scrolling */
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar h1 {
@@ -19,6 +19,7 @@
     padding: 0;
     margin: 0;
     overflow-y: auto;
+    flex-grow: 1; /* Allow the list to grow and take available space */
 }
 
 .sidebar li {
@@ -38,13 +39,19 @@
     color: inherit;
 }
 
+/* Style for selected category */
+.selected {
+    background-color: black;
+    color: white;
+}
+
 /* Main content styles */
 .main-content {
-    margin-left: 0%;
+    flex-grow: 1; /* Allow the main content to grow and take available space */
     padding: 20px;
     width: calc(100% - 18%); /* Adjust width to account for the sidebar */
-    margin-top: 4%;
     overflow-y: auto; /* Enable vertical scrolling if needed */
+    margin-top: 15px;
 }
 
 .cards-container {
@@ -95,7 +102,7 @@
     bottom: 20px;
     right: 20px;
     padding: 10px 20px;
-    background-color: #b0dcd1;
+    background-color: #ff0080;
     color: black;
     border: none;
     border-radius: 5px;
@@ -105,7 +112,9 @@
 }
 
 .goToCartButton:hover {
-    background-color: #0056b3;
+    background-color: #ff0080;
+    box-shadow: 0px 0px 10px 2px #ff0080;
+    font-size:25px;
 }
 
 /* Responsive styles */

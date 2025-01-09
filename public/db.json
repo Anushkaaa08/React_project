@@ -14,6 +14,46 @@
       "id": 3,
       "name": "Strawberry Specials",
       "image": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Gifting",
+      "image": "https://cdn.uengage.io/uploads/7175/image-866546-1705143025.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "Cakes",
+      "image": "https://cdn.uengage.io/uploads/7175/image-325136-1701162080.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "Pastries",
+      "image": "https://cdn.uengage.io/uploads/7175/image-148TD0-1681384622.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Brownies",
+      "image": "https://cdn.uengage.io/uploads/7175/image-QEH716-1681384690.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Desserts & Cupcakes",
+      "image": "https://cdn.uengage.io/uploads/7175/image-4CDG68-1687877409.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Sandwiches & Savouries",
+      "image": "https://cdn.uengage.io/uploads/7175/image-576647-1714137762.jpeg"
+    },
+    {
+      "id": 10,
+      "name": "Croissants & Danishes",
+      "image": "https://cdn.uengage.io/uploads/7175/image-P6S262-1681384636.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Tea Cakes",
+      "image": "https://cdn.uengage.io/uploads/7175/image-ZZ9ZUG-1681384659.jpg"
     }
   ],
   "products": [
@@ -88,6 +128,150 @@
       "description": "Enjoy a range of benefits and discounts...",
       "price": 800,
       "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+    },
+    {
+      "id": 10,
+      "categoryId": 1,
+      "title": "New year Cake - Eggless Dutch Truffle",
+      "description": "Traditional fruit cake with dried fruits and nuts, perfect for the holiday season.",
+      "price": 800,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-333468-1735465923.jpeg"
+    },
+    {
+      "id": 11,
+      "categoryId": 1,
+      "title": "New year Cake - Strawberry & Fresh Cream",
+      "description": "Delicious gingerbread cookies with festive decorations.",
+      "price": 800,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-594581-1735465924.jpeg"
+    },
+    {
+      "id": 12,
+      "categoryId": 1,
+      "title": "Babka",
+      "description": "Delicious gingerbread cookies with festive decorations",
+      "price": 375,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-175845-1734069266.jpeg"
+    },
+    {
+      "id": 13,
+      "categoryId": 1,
+      "title": "Bundt Cake",
+      "description": "Chocolate sponge cake rolled with cream and decorated to look like a Yule log.",
+      "price": 900,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-542425-1734069266.jpeg"
+    },
+    {
+      "id": 14,
+      "categoryId": 1,
+      "title": "Christmas Pudding",
+      "description": "Rich and moist Christmas pudding with a blend of spices.",
+      "price": 750,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-944161-1732947048.jpeg"
+    },
+    {
+      "id": 15,
+      "categoryId": 1,
+      "title": "Christmas Stollen",
+      "description": "Layers of dark and white chocolate topped with crushed peppermint candies.",
+      "price": 400,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-892895-1701974134.jpeg"
+    },
+    {
+      "id": 16,
+      "categoryId": 1,
+      "title": "Eggless Christmas Cake",
+      "description": "Juicy roast turkey with a flavorful herb stuffing.",
+      "price": 2500,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-324471-1732947048.jpeg"
+    },
+    {
+      "id": 17,
+      "categoryId": 1,
+      "title": "Yule Log",
+      "description": "Juicy roast turkey with a flavorful herb stuffing.",
+      "price": 500,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-563814-1734069267.jpeg"
+    },
+    {
+      "id": 18,
+      "categoryId": 1,
+      "title": "Christmas Cake - 700gm",
+      "description": "Glazed ham with a sweet and tangy pineapple sauce.",
+      "price": 2000,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-557283-1732947048.jpeg"
+    },
+    {
+      "id": 19,
+      "categoryId": 2,
+      "title": "Veg Sandwich + Beverage",
+      "description": "A large pepperoni pizza with a side of buffalo wings.",
+      "price": 850,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-428734-1711902409.jpeg"
+    },
+    {
+      "id": 20,
+      "categoryId": 2,
+      "title": "Non-Veg Sandwiches and Savouries",
+      "description": "Juicy cheeseburger with a side of crispy fries.",
+      "price": 450,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-958572-1735912007.jpeg"
+    },
+    {
+      "id": 21,
+      "categoryId": 2,
+      "title": "Non-Veg Sandwiches and Savouries & Juice",
+      "description": "Creamy Alfredo pasta with a fresh garden salad.",
+      "price": 700,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-452324-1735911416.jpeg"
+    },
+    {
+      "id": 22,
+      "categoryId": 2,
+      "title": "Non-Veg Sandwiches and Savouries & Pastry",
+      "description": "Assorted sushi rolls and sashimi slices.",
+      "price": 1200,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-995816-1720690331.jpeg"
+    },
+    {
+      "id": 23,
+      "categoryId": 2,
+      "title": "Non-Veg Sandwiches and Savouries & CupCake",
+      "description": "Three beef tacos with a side of loaded nachos.",
+      "price": 600,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-984328-1720690330.jpeg"
+    },
+    {
+      "id": 24,
+      "categoryId": 2,
+      "title": "Non-Veg Sandwiches and Savouries & Eggless cake",
+      "description": "Grilled steak with a side of mashed potatoes.",
+      "price": 1500,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-645798-1720690331.jpeg"
+    },
+    {
+      "id": 25,
+      "categoryId": 2,
+      "title": "Choice of Brownie + Beverage",
+      "description": "Crispy fried chicken with fluffy waffles.",
+      "price": 800,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-831986-1711902215.jpeg"
+    },
+    {
+      "id": 26,
+      "categoryId": 2,
+      "title": "Choice of Croissant +  Beverage",
+      "description": "Battered fish fillets with a side of fries.",
+      "price": 650,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-427574-1711902215.jpeg"
+    },
+    {
+      "id": 27,
+      "categoryId": 2,
+      "title": "Choice of Eggkess Brownie +  Beverage",
+      "description": "Pancakes, scrambled eggs, and bacon.",
+      "price": 500,
+      "imgSrc": "https://cdn.uengage.io/uploads/7175/image-845367-1711902215.jpeg"
     }
   ],
   "users": [
@@ -185,6 +369,54 @@
           "title": "Vanilla & Berry Pastry",
           "description": "Delicious vanilla pastry with berry compote...",
           "price": 650,
+          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+        },
+        {
+          "id": 2,
+          "categoryId": 3,
+          "title": "Strawberry & Fresh Cream Pastry",
+          "description": "Layers of strawberry jam, fresh cream and...",
+          "price": 775,
+          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-557283-1732947048.jpeg"
+        },
+        {
+          "id": 3,
+          "categoryId": 3,
+          "title": "Premium Plan",
+          "description": "Lorem ipsum dolor sit amet...",
+          "price": 560,
+          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+        },
+        {
+          "id": 3,
+          "categoryId": 3,
+          "title": "Premium Plan",
+          "description": "Lorem ipsum dolor sit amet...",
+          "price": 560,
+          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+        },
+        {
+          "id": 6,
+          "categoryId": 3,
+          "title": "Gold Membership Plan",
+          "description": "Exclusive benefits and offers...",
+          "price": 1200,
+          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
+        },
+        {
+          "id": 2,
+          "categoryId": 3,
+          "title": "Strawberry & Fresh Cream Pastry",
+          "description": "Layers of strawberry jam, fresh cream and...",
+          "price": 775,
+          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-557283-1732947048.jpeg"
+        },
+        {
+          "id": 1,
+          "categoryId": 3,
+          "title": "Strawberry & Fresh Cream Cake",
+          "description": "Layers of strawberry jam, diplomat cream...",
+          "price": 725,
           "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
         }
       ]

@@ -9,7 +9,7 @@ export default function Category() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch('/categories.json')
+        fetch('http://localhost:3000/categories')
             .then(response => response.json())
             .then(data => setCategories(data))
             .catch(error => console.error('Error fetching the categories:', error));
