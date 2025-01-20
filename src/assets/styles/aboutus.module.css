@@ -6,6 +6,7 @@
   flex-direction: column;
   min-height: 500px;
   justify-content: center;
+  padding-top: 150px;
 }
 
 .container_header {

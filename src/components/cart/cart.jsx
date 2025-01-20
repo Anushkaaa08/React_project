@@ -12,19 +12,19 @@ export default function Cartpage() {
     const [selected, setSelected] = useState("Delivery");
     const [cartItems, setCartItems] = useState([]);
     const navigate = useNavigate();
+    const user = JSON.parse(localStorage.getItem('user'));
 
     useEffect(() => {
         // Fetch the cart items from the JSON server based on the logged-in user ID
-        const user = JSON.parse(localStorage.getItem('user'));
+        
         if (user) {
             axios.get(`http://localhost:3000/carts?userId=${user.id}`)
                 .then(response => {
                     const cart = response.data[0];
                     if (cart) {
-                        // Initialize quantity to 1 if not already set
                         const initializedCartItems = cart.products.map(item => ({
                             ...item,
-                            quantity: item.quantity ? item.quantity : 1
+                            
                         }));
                         setCartItems(initializedCartItems);
                     }
@@ -37,11 +37,15 @@ export default function Cartpage() {
         setSelected(option);
     };
 
-    const updateCartItems = (updatedItems) => {
+    const updateCartItems = async(updatedItems) => {
         setCartItems(updatedItems);
         const user = JSON.parse(localStorage.getItem('user'));
+        let res = await  axios.get(`http://localhost:3000/carts?userId=${user.id}`)
+        let id = res.data[0].id;
+        
+
         if (user) {
-            axios.patch(`http://localhost:3000/carts/${user.id}`, { products: updatedItems })
+            axios.patch(`http://localhost:3000/carts/${id}`, { products: updatedItems })
                 .then(response => {
                     console.log('Cart updated successfully');
                 })
@@ -49,10 +53,20 @@ export default function Cartpage() {
         }
     };
 
-    const handleIncrement = (index) => {
-        const updatedItems = [...cartItems];
-        updatedItems[index].quantity += 1;
-        updateCartItems(updatedItems);
+    const handleIncrement =async (id) => {
+       let res = await  axios.get(`http://localhost:3000/carts?userId=${user.id}`)
+       let resProducts = res.data[0].products;
+       resProducts.forEach((product)=>{
+        if(product.id === id){
+            product.quantity = product.quantity + 1;
+        }
+       })
+        console.log(resProducts)
+        updateCartItems(resProducts);
+
+        // const updatedItems = [...cartItems];
+        // updatedItems[index].quantity += 1;
+        // updateCartItems(updatedItems);
     };
 
     const handleDecrement = (index) => {
@@ -152,16 +166,20 @@ export default function Cartpage() {
                 </div>
 
                 <h3 style={{ paddingLeft: '10px' }}>Items Added</h3>
-                <div className={style.card}>
+                <div className={`${style.card}`}>
                     {cartItems.map((item, index) => (
-                        <div key={index} className={style.card_header}>
-                            <div className={style.flex_text}>
-                                <h5>{item.title}</h5>
+                        <div key={index} className={`${style.card_header}`}>
+                            
+                            <div className={`${style.flex_text} flex items-center justify-between w-full`}>
+                            <div className="w-10">
+                                <img src={item.imgSrc} alt="" className="cover" />
                             </div>
-                            <div className={style.item_controls}>
+                                <h5>{item.title}</h5>
+                            <div className={`${style.item_controls}`}>
                                 <button onClick={() => handleDecrement(index)}>-</button>
                                 <span>{item.quantity}</span>
-                                <button onClick={() => handleIncrement(index)}>+</button>
+                                <button onClick={() => handleIncrement(item.id)}>+</button>
+                            </div>
                             </div>
                             ₹ {item.price * item.quantity}
                         </div>
@@ -202,7 +220,7 @@ export default function Cartpage() {
                             </div>
                         </div>
                     </div>
-                    <RazorpayPayment totalAmount={calculateTotal()}/>
+                    <RazorpayPayment totalAmount={calculateTotal()} userId={user.id}/>
                     <div className={style.checkbox}>
                         <input type="checkbox" id="updates" name="updates" />
                         <label htmlFor="updates">Yes, I would like to receive updates and exclusive offers from Magnolia.</label>

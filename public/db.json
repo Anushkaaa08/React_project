@@ -283,7 +283,19 @@
     {
       "id": "1af9",
       "username": "aditi@gmail.com",
-      "password": "test@123"
+      "password": "test@123",
+      "orders": [
+        {
+          "orderId": "pay_PhFaWvPujxOpp3",
+          "amount": 2550,
+          "date": "2025-01-09T06:45:05.986Z"
+        },
+        {
+          "orderId": "pay_PhL7RxVG76glS3",
+          "amount": 1845,
+          "date": "2025-01-09T12:09:48.916Z"
+        }
+      ]
     },
     {
       "id": "c836",
@@ -294,6 +306,23 @@
       "id": "e113",
       "username": "anushka@gmail.com",
       "password": "test123"
+    },
+    {
+      "id": "3246",
+      "username": "varun@gmail.com",
+      "password": "test@123",
+      "orders": [
+        {
+          "orderId": "pay_PhIyuWi8hpqJQl",
+          "amount": 1550,
+          "date": "2025-01-09T10:04:16.839Z"
+        }
+      ]
+    },
+    {
+      "id": "a785",
+      "username": "sam1@gmail.com",
+      "password": "test@123"
     }
   ],
   "carts": [
@@ -324,38 +353,7 @@
       "userId": "1af9",
       "products": [
         {
-          "id": 5,
-          "categoryId": 3,
-          "title": "Vanilla & Berry Pastry",
-          "description": "Delicious vanilla pastry with berry compote...",
-          "price": 650,
-          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
-        },
-        {
-          "id": 8,
-          "categoryId": 3,
-          "title": "Mango Delight Pastry",
-          "description": "Tropical mango pastry with a creamy filling...",
-          "price": 700,
-          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
-        },
-        {
-          "id": "6",
-          "categoryId": 3,
-          "title": "Gold Membership Plan",
-          "description": "Exclusive benefits and offers...",
-          "price": 1200,
-          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
-        },
-        {
-          "id": "11",
-          "categoryId": 1,
-          "title": "New year Cake - Strawberry & Fresh Cream",
-          "description": "Layers of strawberry jam, fresh cream and...",
-          "price": 800,
-          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-594581-1735465924.jpeg"
-        },
-        {
+          "quantity": 1,
           "id": "1",
           "categoryId": 3,
           "title": "Strawberry & Fresh Cream Cake",
@@ -364,20 +362,13 @@
           "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
         },
         {
-          "id": "1",
+          "quantity": 2,
+          "id": "3",
           "categoryId": 3,
-          "title": "Strawberry & Fresh Cream Cake",
-          "description": "Layers of strawberry jam, diplomat cream...",
-          "price": 725,
-          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
-        },
-        {
-          "id": "10",
-          "categoryId": 1,
-          "title": "New year Cake - Eggless Dutch Truffle",
+          "title": "Premium Plan",
           "description": "Layers of strawberry jam, fresh cream and...",
-          "price": 800,
-          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-333468-1735465923.jpeg"
+          "price": 560,
+          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
         }
       ]
     },
@@ -440,6 +431,69 @@
           "imgSrc": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg"
         }
       ]
+    },
+    {
+      "id": "bdb8",
+      "userId": "3246",
+      "products": [
+        {
+          "quantity": 2,
+          "id": "2",
+          "categoryId": 3,
+          "title": "Strawberry & Fresh Cream Pastry",
+          "description": "Layers of strawberry jam, fresh cream and...",
+          "price": 775,
+          "imgSrc": "https://cdn.uengage.io/uploads/7175/image-557283-1732947048.jpeg"
+        }
+      ]
+    }
+  ],
+  "testimonies": [
+    {
+      "id": 1,
+      "img": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg",
+      "title": "Ayush",
+      "content": "The cakes from this bakery are simply divine! Each bite is a perfect blend of flavors and textures. Highly recommend their chocolate truffle cake."
+    },
+    {
+      "id": 2,
+      "img": "https://cdn.uengage.io/uploads/7175/image-557283-1732947048.jpeg",
+      "title": "Bhavik",
+      "content": "I ordered a custom birthday cake and it was a huge hit! The design was exactly what I wanted and the taste was out of this world."
+    },
+    {
+      "id": 3,
+      "img": "https://cdn.uengage.io/uploads/7175/image-831986-1711902215.jpeg",
+      "title": "Samiksha",
+      "content": "Their pastries are to die for! Fresh, delicious, and beautifully presented. I can't get enough of their croissants and eclairs."
+    },
+    {
+      "id": 4,
+      "img": "https://cdn.uengage.io/uploads/7175/image-995816-1720690331.jpeg",
+      "title": "Aditi",
+      "content": "The best bakery in town! Their bread is always fresh and their cakes are a treat for both the eyes and the taste buds. A must-visit for any bakery lover."
+    },
+    {
+      "id": 5,
+      "img": "https://cdn.uengage.io/uploads/7175/image-961254-1701062393.jpeg",
+      "title": "Sahil",
+      "content": "I recently tried their new range of cupcakes and they were absolutely delicious. Moist, flavorful, and topped with the perfect amount of frosting."
+    },
+    {
+      "id": 6,
+      "img": "https://cdn.uengage.io/uploads/7175/image-557283-1732947048.jpeg",
+      "title": "Anushka",
+      "content": "The bakery's attention to detail and quality is evident in every product they offer. Their cookies are my favorite - always fresh and full of flavor."
+    },
+    {
+      "id": "3741",
+      "title": "Varun",
+      "content": "Really good cakes"
+    },
+    {
+      "id": "c530",
+      "title": "Aditi M",
+      "content": "Really nice cakes"
     }
   ]
 }

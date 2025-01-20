@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Menu from "./Menu";
 import "../assets/styles/header.css";
-import { useLocation, useNavigate } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import Logo from "./Logo";
+import { IoPersonCircleOutline } from "react-icons/io5";
 const Header = () => {
   const [state, setState] = useState({
     initial: false,
@@ -68,6 +69,14 @@ const Header = () => {
 
     lastScroll = currentScroll;
   });
+const navigate = useNavigate();
+  const handleCategoryClick = (e) => {
+    const user = JSON.parse(localStorage.getItem('user'));
+    if (!user) {
+        e.preventDefault();
+        navigate('/login');
+    }
+};
 
   return (
     <header className="my-header">
@@ -76,7 +85,28 @@ const Header = () => {
           <div className="title">
             <Logo />
           </div>
-          <div>
+          <div className="hidden items-center gap-5 text-lg md:flex font-sans">
+            <div className=" transition-all border border-[#e37383] rounded-2xl px-2 py-1 hover:border-white ease-in-out">
+              <Link to="/" className="font-sans">Home</Link>
+            </div>
+            <div className=" transition-all border border-[#e37383] rounded-2xl px-2 py-1 hover:border-white  ease-in-out">
+              <Link to="/category" className="font-sans" onClick={handleCategoryClick}>Category</Link>
+            </div>
+            <div className=" transition-all border border-[#e37383] rounded-2xl px-2 py-1 hover:border-white  ease-in-out">
+              <Link to="/contact" className="font-sans">Contact</Link>
+            </div>
+            <div className=" transition-all border border-[#e37383] rounded-2xl px-2 py-1 hover:border-white  ease-in-out">
+              <Link to="/about" className="font-sans">About</Link>
+            </div>
+ 
+            
+          </div>
+          <div className=" transition-all  rounded-2xl px-2 py-1 ease-in-out hidden md:block">
+              <Link to="/login" onClick={handleCategoryClick}>
+                <IoPersonCircleOutline size={32} color="white" />
+              </Link>
+            </div>
+          <div className="block md:hidden">
             <button
               disabled={disabled}
               onClick={handleMenu}

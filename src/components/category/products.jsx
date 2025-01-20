@@ -44,6 +44,7 @@ export default function Products() {
     };
 
     const handleAddToCart = async (product) => {
+        let data= {quantity: 1, ...product}
         const user = JSON.parse(localStorage.getItem('user'));
         if (!user) {
             navigate('/login');
@@ -53,16 +54,23 @@ export default function Products() {
         try {
             const response = await axios.get(`http://localhost:3000/carts?userId=${user.id}`);
             let cart = response.data[0];
+            // console.log(cart)
+            // cart.map((item)=>{
+            //     if(product.id === item.id){
+            //         return;
+            //     }
+            // })
 
             if (cart) {
+              
                 // Cart exists, update it
-                const updatedProducts = [...cart.products, product];
+                const updatedProducts = [...cart.products, data];
                 await axios.patch(`http://localhost:3000/carts/${cart.id}`, { products: updatedProducts });
             } else {
                 // Cart does not exist, create a new one
                 const newCart = {
                     userId: user.id,
-                    products: [product]
+                    products: [data]
                 };
                 await axios.post('http://localhost:3000/carts', newCart);
             }
